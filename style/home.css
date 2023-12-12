@@ -14,6 +14,7 @@ body{
 }
 
 .navbar{
+    border-bottom: 1px solid #222;
     background-color: #0F0F0F;
     height: 90px;
     top:0;
@@ -198,6 +199,7 @@ body{
 /* Footer */
 
 footer{
+    border-top: 1px solid #222;
     position: relative;
     right: 0;
     left: 0;
