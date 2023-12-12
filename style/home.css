@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', 'sans-serif';
+}
+
+/* HEADER DISPLAY */
+
+body{
+    position: relative;
+    min-height: 100%;
+    background-color: #111;
+}
+
+.navbar{
+    background-color: #0F0F0F;
+    height: 90px;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.homebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.homebar span{
+    font-family: 'Exo 2';
+    font-weight: bold;
+    height: 100%;
+    font-size: 40px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.homebar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.homebar ul a{
+    font: 17px;
+    color: #cecece;
+    font-family: 'Space Grotesk', 'sans-serif';
+    list-style: none;
+    padding: 15px;
+}
+
+.homebar ul a:hover{
+    text-decoration: underline white;
+}
+
+.sidebar {
+    font-size: 18px;
+}
+
+.sidebar ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    font-weight: lighter;
+}
+
+.sidebar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    max-width: 120px;
+}
+
+/* Dropdown Hamburger */
+
+/* .dropdown li:first-child{
+    padding: 0 15px 0 15px;
+}
+
+#edit-profile:hover{
+    background-color: rgb(211, 211 ,211);
+}
+
+#log-out:hover{
+    background-color: rgb(255, 78, 78);
+    border-bottom: 1px solid;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content a:nth-child(1){
+    background-color: whitesmoke;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-bottom: 2px solid;
+} */
+
+/* BODY */
+
+.base-body{
+    background: url(bodybackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 110vh;
+}
+
+.base-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.base-text h1{
+    margin: 0;
+    font-size: 80px;
+    color: white;
+}
+
+.base-text p {
+    font-size: 15px; /* Responsive font size based on viewport width */
+    color: white;
+    max-width: 50%; /* Limit width for readability */
+    margin: 10px auto;
+}
+
+.base-text h1{
+    font-family: 'Exo 2';
+    font-weight: bold;
+    font-size: 90px;
+
+}
+
+.buttons{
+    display: flex;
+}
+
+.box{
+    margin: 20px 20px;
+    background-color: #111;
+    width: fit-content;
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 20px 60px;
+    display: flex;
+}
+
+.box a{
+    text-decoration: none;
+    color: white;
+}
+
+.box:hover{
+    cursor: pointer;
+    border: 1px solid #919191;
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+/* Footer */
+
+footer{
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: fit-content;
+    background-color: #111;
+}
+
+.footer-container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top a{
+    color: #cecece;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-top a:hover{
+    text-decoration: underline;
+}
+
+.socialIcons{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 40px;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a i:hover{
+    transform: scale(1.5);
+    transition: .2s;
+}
+
+.footer-bottom{
+    color: white;
+    text-align: center;
+    color: #cecece;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+@media (max-width: 425px){
+    .socialIcons{
+        font-size: 2vw;
+    }
+}
+
+@media(max-height: 550px){
+    .welcome-body{
+        height: 600px;
+    }
+}
