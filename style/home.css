@@ -14,7 +14,7 @@ body{
 }
 
 .navbar{
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #111;
     background-color: #0F0F0F;
     height: 90px;
     top:0;
@@ -61,7 +61,7 @@ body{
 }
 
 .homebar ul a:hover{
-    text-decoration: underline white;
+    font-weight: bold;
 }
 
 .sidebar {
@@ -81,6 +81,10 @@ body{
     align-items: center;
     width: 40px;
     max-width: 120px;
+}
+
+.sidebar a:hover{
+    transform: scale(1.1);
 }
 
 /* Dropdown Hamburger */
@@ -157,9 +161,9 @@ body{
 }
 
 .base-text p {
-    font-size: 15px; /* Responsive font size based on viewport width */
+    font-size: 15px;
     color: white;
-    max-width: 50%; /* Limit width for readability */
+    max-width: 50%;
     margin: 10px auto;
 }
 
@@ -172,24 +176,21 @@ body{
 
 .buttons{
     display: flex;
-}
+}   
 
-.box{
+.box button{
     margin: 20px 20px;
     background-color: #111;
     width: fit-content;
     border: 1px solid white;
     font-size: 15px;
+    text-decoration: none;
+    color: white;
     padding: 15px 70px;
     display: flex;
 }
 
-.box a{
-    text-decoration: none;
-    color: white;
-}
-
-.box:hover{
+.box button:hover{
     cursor: pointer;
     border: 1px solid #919191;
     transform: scale(1.1);
@@ -225,7 +226,7 @@ footer{
 }
 
 .footer-top a:hover{
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .socialIcons{
@@ -251,9 +252,6 @@ footer{
 .socialIcons a:hover{
     background-color: #111;
     transition: 0.5s;
-}
-
-.socialIcons a i:hover{
     transform: scale(1.5);
     transition: .2s;
 }
