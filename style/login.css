@@ -8,7 +8,7 @@
 }
 
 body{
-    background: url(loginbackground.jpg);
+    background: url(images/loginbackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
