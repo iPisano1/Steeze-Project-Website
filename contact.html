@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aea1d15b30.js" crossorigin="anonymous"></script>
+    <script src="system/contact.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -43,12 +44,12 @@
         <div class="container">
             <h1>Contact</h1>
             <div class="contactname">
-                <input type="text" placeholder="First Name" class="name">
-                <input type="text" placeholder="Last Name" class="name">
+                <input type="text" placeholder="First Name" class="name" id="firstname">
+                <input type="text" placeholder="Last Name" class="name" id="lastname">
             </div>
-            <input type="email" placeholder="Email">
-            <textarea id="contact-reason" cols="30" rows="10" placeholder="Message"></textarea>
-            <button>Send</button>
+            <input type="email" placeholder="Email" id="email">
+            <textarea id="contact-reason" cols="30" rows="10" placeholder="Message" itemid="contact-reason"></textarea>
+            <button onclick="submit()">Send</button>
         </div>
     </div>
     <footer>
